@@ -159,9 +159,9 @@ class IdealGas:
         return v_2, t_2, gamma
 
     def determine_state(self, p=None, v=None, t=None):
-        """Определить состояние газа (заглушка для реализации)."""
+        """Определить состояние газа"""
         return "Gas"
 
     def find_quality(self, p=None, v=None, t=None):
-        """Найти степень сухости (заглушка для реализации)."""
+        """Найти степень сухости"""
         return 1
