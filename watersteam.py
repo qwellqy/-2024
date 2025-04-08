@@ -123,7 +123,7 @@ class WaterSteam:
         
     def calculation_isochoric_process(self, p_1=None, t_1=None, h_1=None, s_1=None, p_2=None, t_2=None, s_2=None, h_2=None, v=None):
         """Расчет изохорного процесса."""
-        initial = IAPWS97(P=p_1, T=t_1, h=h_1, s=s_1)
+        initial = IAPWS97(P=p_1, T=t_1, h=h_1, s=s_1, V=v)
         final = IAPWS97(P=p_2, T=t_2, h=h_2, s=s_2, v=initial.v)
         return final.P, final.v, final.T
     
